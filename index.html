@@ -14,31 +14,37 @@
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 		<form action="">
 			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
+			<input type="text" id="nombreId" required>
+			<br>
 			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text">
+			<input type="text"  id="apellidoId" required>
+			<br>
 			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
+			<input type="email"  id="emailId" required>
+			<br>
 			<label for="Dirección">Dirección: </label>
-			<input type="text">
+			<input type="text"  id="direccionId" required>
+			<br>
 			<label for="Teléfono">Teléfono:</label>
-			<input type="text">
+			<input type="text" id="telefonoId" required>
+			<br>
 			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
-				<option value="">Escoje tu opción</option>
-				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
-				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
+			<select name="selector" id="selector">
+				<option value="escoje">Escoje tu opción</option>
+				<option value="teNegro">Pack de té clásico (Té negro)</option>
+				<option value="hierbas">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+				<option value="variedad">Pack variedades (Té verde, rojo y blanco)</option>
 			</select>
-			<label for=""></label>
-			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
+			<br>
+			<label for="newsletter"></label>
+			<input type="checkbox" name="newsletter" value="suscribir" id="newsletter"> Recibe nuestro newsletter mensual con actividades y sorteos
 			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
 		</form>
 	</section>
 	<section id="clientes">
 		<!-- Acá van los datos de ingresados por los clientes -->
 	</section>
-	<section id="productos">
+	<section id="productos"> 
 		<!-- Acá puedes crear lo que quieras-->
 	</section>
 	<script src="js/main.js"></script>
